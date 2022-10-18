@@ -13,7 +13,7 @@ function generateKey(lengthRandomArrey, string){
    const randomArrey=[];
    const stringToArrey = string.split('');
    
-   for(i = 0; i < lengthRandomArrey ; i++ ) {
+   for(let i = 0; i < lengthRandomArrey ; i++ ) {
 
     randomArrey.push(stringToArrey[Math.floor(Math.random() * stringToArrey.length)]);
     console.log(randomArrey);
