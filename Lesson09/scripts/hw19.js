@@ -7,12 +7,12 @@ console.log ("Hello, World!");
 //Не обмежувати кількість мешканців у квартирі
 
 class Person {
-    namePerson;
-    genderPerson;
+    name;
+    gender;
 
-    constructor (namePerson, genderPerson){
-    this.namePerson = namePerson;
-    this.genderPerson = genderPerson;
+    constructor (name, gender){
+    this.name = name;
+    this.gender = gender;
     }
 }
 
@@ -20,7 +20,7 @@ class Apartment {
     
     residents = [];
 
-        addResidents (resident) {
+        addResident (resident) {
         
         this.residents.push(resident);
     }
@@ -51,9 +51,9 @@ const thirdPerson = new Person ('Bred Pit', 'men');
 const firstApartment = new Apartment (1);
 const secondApartment = new Apartment (2);
 
-firstApartment.addResidents(firstPerson);
-secondApartment.addResidents(thirdPerson);
-secondApartment.addResidents(secondPerson);
+firstApartment.addResident(firstPerson);
+secondApartment.addResident(thirdPerson);
+secondApartment.addResident(secondPerson);
 
 const firstApartmentHouse = new ApartmentHouse(2);
 
